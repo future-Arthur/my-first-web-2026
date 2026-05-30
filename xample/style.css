@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding :0;
+}
+
+.boxContainer{
+    display : grid;
+    gap : 5px;
+    grid-template-columns : 100px 100px;
+    grid-template-rows  : 50px 300px 100px 100px 50px;
+    grid-template-areas : 
+    "box-1 box-1"
+    "box-2 box-3"
+    "box-4 box-5"
+    "box-6 box-7"
+    "box-8 box-8"
+
+
+}
+.box{
+    background-color :tomato;
+    text-align : center;
+
+
+}
