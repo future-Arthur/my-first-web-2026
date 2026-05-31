@@ -5,31 +5,31 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <div class = "calculator">
-            <input type ="text" placeholder = "type" readonly>
-            <hr style = "margin-top : 8px">
+            <div class = "calculator">
+            <input  class = "display" placeholder = "type" readonly>
+                <hr style = "margin-top : 8px">
             <div class = "keys">
                 
-                <buttons class = "buttons" > ⌫ </buttons>
-                <buttons class = "buttons" >AC</buttons>
-                <buttons class = "buttons" >%</buttons>
-                <buttons class = "buttons" >/</buttons>
-                <buttons class = "buttons" >7</buttons>
-                <buttons class = "buttons" >8</buttons>
-                <buttons class = "buttons" >9</buttons>
-                <buttons class = "buttons" >X</buttons>
-                <buttons class = "buttons" >4</buttons>
-                <buttons class = "buttons" >5</buttons>
-                <buttons class = "buttons" >6</buttons>
-                <buttons class = "buttons" >-</buttons>
-                <buttons class = "buttons" >1</buttons>
-                <buttons class = "buttons" >2</buttons>
-                <buttons class = "buttons" >3</buttons>
-                <buttons class = "buttons" >+</buttons>
-                <buttons class = "buttons" >//</buttons>
-                <buttons class = "buttons" >0</buttons>
-                <buttons class = "buttons" >.</buttons>
-                <buttons class = "buttons" >=</buttons>
+                <buttons  class = "btnKeys" onclick = "clearDisplay()"> ⌫ </buttons>
+                <buttons  class = "btnKeys" onclick = "clearDisplay()">AC</buttons>
+                <buttons  class = "btnKeys" onclick = "appendToDisplay('%')">%</buttons>
+                <buttons  class = "btnKeys" onclick = "appendToDisplay('/')">/</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('7')">7</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('8')">8</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('9')">9</buttons>
+                <buttons  class = "btnKeys" onclick = "appendToDisplay('*')">X</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('4')">4</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('5')">5</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('6')">6</buttons>
+                <buttons  class = "btnKeys" onclick = "appendToDisplay('-')">-</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('1')">1</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('2')">2</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('3')">3</buttons>
+                <buttons  class = "btnKeys" onclick = "appendToDisplay('+')">+</buttons>
+                <buttons  style = "font-size : 10px; padding-top : 12px" class = " buttons" onclick = "appendOnOff()">on/off</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('0')">0</buttons>
+                <buttons  class = "buttons" onclick = "appendToDisplay('.')">.</buttons>
+                <buttons  class = "btnKeys" onclick = "calculate()">=</buttons>
 
             </div>
 

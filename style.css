@@ -1,8 +1,5 @@
-*,
-*:: before,
-*:: after{
-    box-sizing : border-box;
-}
+
+
 *{
     margin:0;
     padding :0;
@@ -16,6 +13,10 @@ body{
     background-color :grey;
 
 }
+
+.display{
+    overflow :hidden;
+}
 .calculator{
     border-radius : 10px;
     padding :  15px 6px 6px 7px;
@@ -24,6 +25,7 @@ body{
 }
 
 .keys{
+    cursor : pointer;
     margin-top :10px;
     text-align : center;
     display : grid;
@@ -42,11 +44,11 @@ input{
     border-radius : 5px;
     border : none;
 }
-.buttons{
+buttons{
     margin-top : 3px;
     padding-top : 8.5px;
     background-color:blue;
-    transition : 1.5s;
+    transition : 0.5s;
     border-radius:10px;
     border : 1px solid black;
 
@@ -56,5 +58,25 @@ input{
     width : 41px;
     height : 28px;
     border : 1.5px solid black;
+
+}
+.buttons:active{
+    background-color : hsl(44, 17%, 87%)
+}
+
+.btnKeys{
+    background-color : hsl(12, 91%, 47%);
+
+}
+.btnKeys:hover{
+    background-color : gold;
+    border : 1.5px solid black;
+    height : 28px;
+    width : 41px;
+
+}
+
+.btnKeys:active{
+    background-color :hsl(12, 100%, 50%)
 
 }

@@ -1,12 +1,26 @@
+let buttons = document.querySelector(".keys") ;
+let display = document.querySelector(".display");
 
+function appendToDisplay(input){
 
-let buttons = document.querySelectorAll(".keys") 
-
-
-for(i = 0; i < buttons.length;i++){
-
-buttons[i].style.fontWeight = "bold";
-buttons[i].style.fontFamily = "arial";
+    display.value += input;
 
 }
+function clearDisplay(){
+    display.value = "";
+}
+
+function appendOnOff(){
+display.style.backgroundColor = "black";
+
+}
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error";
+    }
+}
+
 
