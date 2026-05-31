@@ -1,25 +1,60 @@
+*,
+*:: before,
+*:: after{
+    box-sizing : border-box;
+}
 *{
     margin:0;
     padding :0;
 }
 
-.boxContainer{
+body{
+    display : flex;
+    justify-content : center;
+    align-items :center;
+    height : 350px;
+    background-color :grey;
+
+}
+.calculator{
+    border-radius : 10px;
+    padding :  15px 6px 6px 7px;
+    border : 2px solid black;
+    height : 270px
+}
+
+.keys{
+    margin-top :10px;
+    text-align : center;
     display : grid;
-    gap : 5px;
-    grid-template-columns : 100px 100px;
-    grid-template-rows  : 50px 300px 100px 100px 50px;
-    grid-template-areas : 
-    "box-1 box-1"
-    "box-2 box-3"
-    "box-4 box-5"
-    "box-6 box-7"
-    "box-8 box-8"
+    grid-template-columns : 40px 40px 40px 40px ;
+    grid-template-rows :  40px 40px 40px 40px 40px;
+    gap : 3px;
+    justify-content : space-evenly;
+    transition : 1s;
 
 
 }
-.box{
-    background-color :tomato;
-    text-align : center;
+input{
 
+    padding : 10px;
+    margin : auto;
+    border-radius : 5px;
+    border : none;
+}
+.buttons{
+    margin-top : 3px;
+    padding-top : 8.5px;
+    background-color:blue;
+    transition : 1.5s;
+    border-radius:10px;
+    border : 1px solid black;
+
+}
+.buttons:hover {
+    background-color : yellow;
+    width : 41px;
+    height : 28px;
+    border : 1.5px solid black;
 
 }
