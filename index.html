@@ -3,38 +3,47 @@
 <html>
     <head>
         <link rel = "stylesheet" href = "style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-            <div class = "calculator">
-            <input  class = "display" placeholder = "type" readonly>
-                <hr style = "margin-top : 8px">
-            <div class = "keys">
-                
-                <buttons  class = "btnKeys" onclick = "clearDisplay()"> ⌫ </buttons>
-                <buttons  class = "btnKeys" onclick = "clearDisplay()">AC</buttons>
-                <buttons  class = "btnKeys" onclick = "appendToDisplay('%')">%</buttons>
-                <buttons  class = "btnKeys" onclick = "appendToDisplay('/')">/</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('7')">7</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('8')">8</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('9')">9</buttons>
-                <buttons  class = "btnKeys" onclick = "appendToDisplay('*')">X</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('4')">4</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('5')">5</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('6')">6</buttons>
-                <buttons  class = "btnKeys" onclick = "appendToDisplay('-')">-</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('1')">1</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('2')">2</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('3')">3</buttons>
-                <buttons  class = "btnKeys" onclick = "appendToDisplay('+')">+</buttons>
-                <buttons  style = "font-size : 10px; padding-top : 12px" class = " buttons" onclick = "appendOnOff()">on/off</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('0')">0</buttons>
-                <buttons  class = "buttons" onclick = "appendToDisplay('.')">.</buttons>
-                <buttons  class = "btnKeys" onclick = "calculate()">=</buttons>
+        <section class = "home">
+            <nav class = "links">
+                    <ul>
+
+                        <li>
+                            <h4>John Arthur Quita</h4>
+                            <a href = "#">Home</a>
+                            <a href = "#">About</a>
+                            <a href = "#">Skills</a>
+                            <a href = "#">Projects</a>
+                            <a href = "#">Contact</a>
+
+                        </li>
+                    </ul>
+            </nav>
+        </section>
+
+        <section id = "home" class = "hero">
+            <h1>Hi, I'm John Arthur Quita</h1>
+            <p>BSIT Graduate</p>
+            <p>Anspiring Web Developer</p>
+            <button> View My Projects</button>
+
+        </section>
+
+
+
+
+
+        <section class = "section1">
+            <div class = "glassContainer">
+                <h1>
+                    Glass Made
+                </h1>
 
             </div>
+        </section>
 
-
-        </div>
 
     </body>
     <script src = "script.js"></script>

@@ -1,82 +1,227 @@
 
-
 *{
-    margin:0;
-    padding :0;
+    margin : 0;
+    padding : 0;
+    box-sizing :border-box;
+
+}
+body{ 
+
+        font-family: "Inter", sans-serif;
+        background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
 }
 
-body{
+.home{
+    width : 100%;
+    height : 100px;
+    box-shadow:
+    0 0 2px #60a5fa,
+    0 0 3px #60a5fa,
+    0 0 6px #60a5fa;
+
+}
+
+.links  ul{
     display : flex;
     justify-content : center;
-    align-items :center;
-    height : 350px;
-    background-color :grey;
+
 
 }
+.links ul li{
 
-.display{
-    overflow :hidden;
+    display : flex;
+    justify-content :space-around;
+    gap : 2em;
+    align-items : center;
+    height : 100px;
+    width : 100%;
 }
-.calculator{
+
+
+.links  ul li h4{
+    text-align :center;
+    color :white;
+    font-size : 35px;
+    padding : 0;
     border-radius : 10px;
-    padding :  15px 6px 6px 7px;
-    border : 2px solid black;
-    height : 270px
-}
-
-.keys{
-    cursor : pointer;
-    margin-top :10px;
-    text-align : center;
-    display : grid;
-    grid-template-columns : 40px 40px 40px 40px ;
-    grid-template-rows :  40px 40px 40px 40px 40px;
-    gap : 3px;
-    justify-content : space-evenly;
-    transition : 1s;
-
-
-}
-input{
-
-    padding : 10px;
-    margin : auto;
-    border-radius : 5px;
-    border : none;
-}
-buttons{
-    margin-top : 3px;
-    padding-top : 8.5px;
-    background-color:blue;
+    width : 350px;
     transition : 0.5s;
-    border-radius:10px;
-    border : 1px solid black;
 
 }
-.buttons:hover {
-    background-color : yellow;
-    width : 41px;
-    height : 28px;
-    border : 1.5px solid black;
-
-}
-.buttons:active{
-    background-color : hsl(44, 17%, 87%)
+.links ul li h4:hover{
+    box-shadow: 0 15px 6px -10px #60a5fa;
 }
 
-.btnKeys{
-    background-color : hsl(12, 91%, 47%);
+
+
+
+
+.links  ul li a{
+    border-radius : 3px;
+    border:1px solid rgba(255,255,255,0.2);
+    font-size : 30px;
+    padding : 3px 18px ;
+    box-shadow: 0 13px 9px -10px #60a5fa;
+   /* box-shadow:
+    0 0 2px #60a5fa,
+    0 0 3px #60a5fa,
+    0 0 6px #60a5fa; */
+
+    color : white;
+    text-decoration : none;
+    transition : 0.7s;
+}
+.links ul li a:hover{
+  /*  background: rgba(255, 255, 255, 0.116); */
+
+     box-shadow:
+    0 0 6px #60a5fa,
+    0 0 11px #60a5fa,
+    0 0 15px #60a5fa;
 
 }
-.btnKeys:hover{
-    background-color : gold;
-    border : 1.5px solid black;
-    height : 28px;
-    width : 41px;
+
+/* -------------- Home Area ---------------------------------------*/
+
+.hero{
+    height :100vh;
+    display:flex;
+    flex-direction :column;
+    justify-content :start;
+    align-items : center;
+    text-align:center;
+    color :white;
+    padding-top:40px;
+
+}
+.hero h1{
+    font-size : 70px;
+}
+.hero p{
+    font-size : 28px;
+    margin : 25px;
+
+}
+.hero button{
+    font-size : 15px;
+    font-weight : bold;
+    margin :30px;
+    display : absolute;  
+    color :white;
+    cursor : pointer;
+    padding : 10px;
+    background-color: transparent;
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 13px 9px -10px #60a5fa;
+    transition : 0.5s;
+}
+.hero button:hover{
+    box-shadow:
+    0 0 6px #60a5fa,
+    0 0 11px #60a5fa,
+    0 0 15px #60a5fa;
+}
+
+
+
+
+@media(max-width: 700px){
+    .home .links ul li{
+    display:flex;
+    flex-direction :column;
+}
+.home .links ul li a{
+    text-align : center;
+    width:100%;
+    padding:8px;
+    font-size : 20px;
+}
+.home .links ul li h4{
+    margin-top: 50px;
+    font-size : 25px;
+    width:100%;
+}
+.home{
+    position:absolute;
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    height:100vh;
+    width:250px;
+    top : 0;
+    right:0;
+    text-align:left;
+    z-index:2;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section1{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 100dvh;
 
 }
 
-.btnKeys:active{
-    background-color :hsl(12, 100%, 50%)
+.glassContainer{
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    border-radius :10px;
+    color :white;
+    box-shadow:
+    0 0 2px #60a5fa,
+    0 0 3px #60a5fa,
+    0 0 6px #60a5fa;
+
+    width : 200px;
+    height :200px;
+    display:flex;
+    justify-content : center;
+    align-items : center;
+    transition :0.5s;
+    cursor :pointer;
+}
+
+.glassContainer:hover{
+
+    box-shadow:
+    0 0 6px #60a5fa,
+    0 0 11px #60a5fa,
+    0 0 15px #60a5fa;
+    background: rgba(255, 255, 255, 0.158)
+    
+
+
+}
+
+.glassContainer h1{
+    font-family : arial;
+    font-weight : bold;
 
 }
